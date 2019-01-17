@@ -15,27 +15,27 @@
 
 ### 项目效果
 
-![demo](./image/demo.png)
+<img src='./image/demo.png' width='500px'/>
 
-![demo2](./image/demo2.png)
+<img src='./image/demo2.png' width='500px'/>
 
 ### 实现的功能
 
 #### 添加任务
 
-![add](./image/add.gif)
+<img src='./image/add.gif' width='500px'/>
 
 #### 删除单个任务
 
-![deleteone](./image/deleteone.gif)
+<img src='./image/deleteone.gif' width='500px'/>
 
 #### 删除多个任务
 
-![deleteSelected](./image/deleteSelected.gif)
+<img src='./image/deleteSelected.gif' width='500px'/>
 
 #### 全选
 
-![selectAll](./image/selectAll.gif)
+<img src='./image/selectAll.gif' width='500px'/>
 
 ### 项目下载方式
 
