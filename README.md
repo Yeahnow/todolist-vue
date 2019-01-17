@@ -15,27 +15,27 @@
 
 ### 项目效果
 
-![demo](D:\桌面\demo.png)
+![demo](./image/demo.png)
 
-![demo2](D:\桌面\demo2.png)
+![demo2](./image/demo2.png)
 
 ### 实现的功能
 
 #### 添加任务
 
-![add](D:\桌面\add.gif)
+![add](./image/add.gif)
 
 #### 删除单个任务
 
-![deleteone](D:\桌面\deleteone.gif)
+![deleteone](./image/deleteone.gif)
 
 #### 删除多个任务
 
-![deleteSelected](D:\桌面\deleteSelected.gif)
+![deleteSelected](./image/deleteSelected.gif)
 
 #### 全选
 
-![selectAll](D:\桌面\selectAll.gif)
+![selectAll](./image/selectAll.gif)
 
 ### 项目下载方式
 
