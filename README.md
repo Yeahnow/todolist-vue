@@ -3,7 +3,7 @@
 -----
 
 ### 使用工具：
-前端： vue-cli3 + vuex + axios + pubsub-js
+前端： vue-cli3 + vue + vuex + axios + pubsub-js
 
 后端： nodeJS + express
 
