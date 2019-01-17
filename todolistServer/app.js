@@ -24,7 +24,8 @@ const jsonParser = bodyParser.json()
 
 // 以下是获取、添加、删除数据的路由程序
 app.get('/getData', (req, res) => {
-  ListModel.find({}, (erro, docs) => {
+  ListModel.find({}, (err, docs) => {
+    if(err) throw err
     res.send(docs)
     res.end()
   })
@@ -64,6 +65,7 @@ app.delete('/deleteData', jsonParser, (req, res) => {
         if(err) throw err
         if(index === (restarr.length - 1)) {
           ListModel.find({}, (err, docs) => {
+            if(err) throw err
             res.send(docs)
             res.end()
           })

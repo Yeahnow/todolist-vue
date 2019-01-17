@@ -16,9 +16,21 @@ const actions = {
   },
   // 调用封装好的unloadData方法添加数据到数据库中
   // action中的所有函数的第二个参数都是形参与实参之间进行解构赋值得到相应的变量
-  async add({ commit }, { newval }) {
+  async add({ commit, state }, { newval }) {
+    let isExist = false
+    // 判断传入数据是否已存在列表中
+    state.data.forEach(item => {
+      if(item.text === newval) {
+        isExist = true
+        return
+      }
+    })
+    // 判断传入数据是否为空
     if (!newval) {
       alert('the value can not be null')
+      return
+    } else if(isExist) {
+      alert('The task already exists in the list')
       return
     }
     const data = {
@@ -42,14 +54,19 @@ const actions = {
       array: arr
     }
     const res = await deleteData(data)
-    const val = res.map((item) => {
-      item = {
-        text: item.text,
-        isCheck: false
-      }
-      return item
-    })
-    val.reverse()
+    let val
+    if (res) {
+      val = res.map((item) => {
+        item = {
+          text: item.text,
+          isCheck: false
+        }
+        return item
+      })
+      val.reverse()
+    } else {
+      val = res
+    }
     commit('GET', { val })
   },
   async deleteSelected({ commit, state }) {
@@ -65,14 +82,19 @@ const actions = {
     }
     // 调用封装好的deleteSelected方法删除选中数据
     const res = await deleteData(data)
-    const val = res.map((item) => {
-      item = {
-        text: item.text,
-        isCheck: false
-      }
-      return item
+    let val
+    if(res) {
+      val = res.map((item) => {
+        item = {
+          text: item.text,
+          isCheck: false
+        }
+        return item
       })
-    val.reverse()
+      val.reverse()
+    } else{
+      val = res
+    }
     commit('GET', { val })
   },
   // 选择全部
