@@ -33,7 +33,7 @@
 
 <img src='./image/deleteSelected.gif' width='500px'/>
 
-#### 全选
+#### 全选功能
 
 <img src='./image/selectAll.gif' width='500px'/>
 
@@ -71,5 +71,7 @@ npm run serve
 
 之后会浏览器会自动打开项目页面
 
+### 最后
 
+这个小项目实现的功能虽然很简单，但涉及到的知识点很多，适合入门上手，欢迎大家star，如果有遇到问题可以发issue提出
 
