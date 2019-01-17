@@ -15,9 +15,7 @@
 
 ### 项目效果
 
-<img src='./image/demo.png' width='500px'/>
-
-<img src='./image/demo2.png' width='500px'/>
+<img src='./image/demo.png' width='400px'/><img src='./image/demo2.png' width='400px'/>
 
 ### 实现的功能
 
